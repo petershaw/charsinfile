@@ -24,7 +24,7 @@ time ./charsinfile sample.txt b -> result-b.txt
 3. test the results:
 
 ```
-diff result-a.txt sample.txt
-diff result-a.txt result-b.txt
+diff sample.txt result-a.txt
+diff sample.txt result-b.txt
 ```
 
