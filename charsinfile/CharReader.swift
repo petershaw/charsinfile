@@ -49,7 +49,7 @@ class CharReader {
         if stored_cnt > (stored_idx + 1) {
             stored_idx += 1
             let char = characterPointer.pointee
-            characterPointer = characterPointer.successor()
+            characterPointer += 1 //characterPointer.successor()
             return char
         }
         
@@ -59,7 +59,8 @@ class CharReader {
             return nil
         }
         
-        if let s = NSString(data: tmpData, encoding: encoding.rawValue) as String! {
+        
+        if let s = String(data: tmpData, encoding: encoding) {
             stored_idx = 0
             let characters = s.characters
             stored_cnt = characters.count

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		01E366611DCF5F97000D4D68 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E366601DCF5F97000D4D68 /* main.swift */; };
 		01E366681DCF65A8000D4D68 /* CharReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E366671DCF65A8000D4D68 /* CharReader.swift */; };
+		01E3666B1DCF7FB0000D4D68 /* StreamGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E3666A1DCF7FB0000D4D68 /* StreamGenerator.swift */; };
+		01E3666D1DCF8048000D4D68 /* UnicodeScalarGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E3666C1DCF8048000D4D68 /* UnicodeScalarGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +29,8 @@
 		01E3665D1DCF5F97000D4D68 /* charsinfile */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = charsinfile; sourceTree = BUILT_PRODUCTS_DIR; };
 		01E366601DCF5F97000D4D68 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		01E366671DCF65A8000D4D68 /* CharReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharReader.swift; sourceTree = "<group>"; };
+		01E3666A1DCF7FB0000D4D68 /* StreamGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StreamGenerator.swift; path = Stream/StreamGenerator.swift; sourceTree = "<group>"; };
+		01E3666C1DCF8048000D4D68 /* UnicodeScalarGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnicodeScalarGenerator.swift; path = Stream/UnicodeScalarGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,20 @@
 		01E3665F1DCF5F97000D4D68 /* charsinfile */ = {
 			isa = PBXGroup;
 			children = (
+				01E366691DCF7F9B000D4D68 /* Stream */,
 				01E366601DCF5F97000D4D68 /* main.swift */,
 				01E366671DCF65A8000D4D68 /* CharReader.swift */,
 			);
 			path = charsinfile;
+			sourceTree = "<group>";
+		};
+		01E366691DCF7F9B000D4D68 /* Stream */ = {
+			isa = PBXGroup;
+			children = (
+				01E3666A1DCF7FB0000D4D68 /* StreamGenerator.swift */,
+				01E3666C1DCF8048000D4D68 /* UnicodeScalarGenerator.swift */,
+			);
+			name = Stream;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +140,8 @@
 			files = (
 				01E366681DCF65A8000D4D68 /* CharReader.swift in Sources */,
 				01E366611DCF5F97000D4D68 /* main.swift in Sources */,
+				01E3666B1DCF7FB0000D4D68 /* StreamGenerator.swift in Sources */,
+				01E3666D1DCF8048000D4D68 /* UnicodeScalarGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +273,7 @@
 				01E366661DCF5F97000D4D68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
