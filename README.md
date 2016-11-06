@@ -6,7 +6,7 @@ This project is a prototye to find out the fastest solution to read a file char 
 Relates StackOverflow Thread: http://stackoverflow.com/questions/40450190/what-is-the-fastest-char-by-char-reader-in-swift
 And the "b" example from: http://stackoverflow.com/a/34595661/1187415 (Thanks to @RobNapier)
 
-# Testing the different Solutions
+# Testing the different solutions
 
 1. Generate a testfile: 
 
