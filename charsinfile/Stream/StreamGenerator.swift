@@ -41,7 +41,7 @@ extension StreamGenerator: IteratorProtocol {
         }
         
         // Our buffer is empty. Block until there is at least one byte available
-        let count = stream.read(&buffer, maxLength: buffer.capacity)
+        let count = stream.read(&buffer, maxLength: buffer.count)
         
         if count <= 0 { // FIXME: Probably want a closure or something to handle error cases
             stream.close()
